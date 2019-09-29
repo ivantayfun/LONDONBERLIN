@@ -2,20 +2,20 @@ package com.example.ivan.myapplication;
 
 import android.app.Activity;
 import android.content.ContentValues;
-import android.content.Context;
+//import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
+//import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.LinearLayout;
+//import android.view.LayoutInflater;
+//import android.view.View;
+//import android.view.ViewGroup;
+//import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.TextView;
+//import android.widget.TextView;
 import android.widget.Toast;
 //import com.example.ivan.myapplication.URLConnectionExample;
 import android.database.Cursor;
@@ -24,7 +24,7 @@ import android.database.sqlite.SQLiteDatabase;
 //import org.apache.http.HttpResponse;
 //import org.apache.http.NameValuePair;
 //import org.apache.http.client.ClientProtocolException;
-import java.net.*;
+//import java.net.*;
 //import org.apache.http.client.entity.UrlEncodedFormEntity;
 //import org.apache.http.client.methods.HttpPost;
 //import org.apache.http.impl.client.DefaultHttpClient;
@@ -34,17 +34,17 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
+//import java.io.IOException;
+//import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
+//import java.util.List;
 
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
+//import android.database.Cursor;
+//import android.database.sqlite.SQLiteDatabase;
+//import android.database.sqlite.SQLiteOpenHelper;
 
-import com.example.ivan.myapplication.R;
+//import com.example.ivan.myapplication.R;
 
 
 public class AndroidActivity extends Activity {
@@ -52,16 +52,16 @@ public class AndroidActivity extends Activity {
     private ListView lv;
     ArrayList<HashMap<String, String>> contactList;
     ExternalDbOpenHelper dbOpenHelper;                                                  //2
-    SQLiteDatabase db;
-    SQLiteDatabase db2;
+    //SQLiteDatabase db;
+    //SQLiteDatabase db2;
     String jsonStr;
-    String namelessons;
+    //String namelessons;
     int[] dbname_id_arr;
-    int[] colors = new int[1];
+    //int[] colors = new int[1];
     String[] dbname_name_arr;
     String[] dbname_name_otobrajenie_arr;
     String[] args;
-    LinearLayout slovary_activity_lnlname;
+    //LinearLayout slovary_activity_lnlname;
     //DBHelper dbh;
 
     @Override
@@ -73,7 +73,7 @@ public class AndroidActivity extends Activity {
         args = new String[3];
         dbname_name_otobrajenie_arr = new String[20];
         contactList = new ArrayList<>();
-        lv = (ListView) findViewById(R.id.londonberlin_list);
+        lv = findViewById(R.id.londonberlin_list);
         args[0]="POST";
         args[1]="namelessons";
         args[2]="";
@@ -152,8 +152,8 @@ public class AndroidActivity extends Activity {
                             String english = c.getString("english");
                             String russian = c.getString("russian");
                             String transcription = c.getString("transcription");
-                            String kolotv = c.getString("kolotv");
-                            String vid = c.getString("vid");
+                            //String kolotv = c.getString("kolotv");
+                            //String vid = c.getString("vid");
 
                             ContentValues cv = new ContentValues();
 
